@@ -1,13 +1,16 @@
 from prefect import task
+from pathlib import Path
 
 
 @task
-def read_data():
-    pass
+def read_data(directory: str = "data", amount: int = 5) -> list:
+    files = sorted(Path(directory).glob("*.pdf"))
+
+    return files[:amount]
 
 
 @task
-def clean_data():
+def load_data():
     pass
 
 
@@ -26,8 +29,9 @@ def cleanup():
     pass
 
 
-def main_flow():
-    pass
+def main_flow(directory: str = "data"):
+    file_names = read_data(directory=directory)
+    print(file_names)
 
 
 if __name__ == "__main__":

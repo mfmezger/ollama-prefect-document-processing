@@ -19,4 +19,4 @@ If you are using windows please install it via WSL2.
 Then install poetry with
 `pip install poetry`
 
-Install the project with poetry install.
+Install the project with `poetry install`.
