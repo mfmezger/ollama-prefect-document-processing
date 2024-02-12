@@ -20,3 +20,13 @@ Then install poetry with
 `pip install poetry`
 
 Install the project with `poetry install`.
+
+
+## Usage
+
+First log into prefect cloud with `prefect cloud login`.
+
+
+## Data
+
+The dataset used is the Samples of electronic Invoices Dataset from Mendeley Data. The dataset ist available here: https://data.mendeley.com/datasets/tnj49gpmtz/2 and licenced under CC BY 4.0.
